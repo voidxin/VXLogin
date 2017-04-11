@@ -11,7 +11,7 @@
 #import <VXProtocolManager/VXProtocolManager.h>
 #import <VXDataPageServiceProcotol/VXDataPageServiceProcotol.h>
 #import <VXRootPageServiceProtocol/VXRootPageServiceProtocol.h>
-
+#import "VXLoginBackView.h"
 #define kTextFont [UIFont systemFontOfSize:15.f]
 #define kWidth [UIScreen mainScreen].bounds.size.width
 #define kHeight [UIScreen mainScreen].bounds.size.height
@@ -21,9 +21,9 @@
 
 
 @interface VXLoginViewController ()
-@property(nonatomic,strong)UITextField *userNameTextField;
-@property(nonatomic,strong)UITextField *passwordTextField;
+@property(nonatomic,strong)VXLoginBackView *backView;
 @property(nonatomic,strong)UIButton *loginBtn;
+@property(nonatomic,strong)UIImageView *imageView;
 @end
 
 @implementation VXLoginViewController
@@ -31,27 +31,29 @@
 - (instancetype)initLoginVC {
     self = [super init];
     if (self) {
-        [self addUI];
+       // [self addUI];
     }
     return self;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-   // [self addUI];
+    [self addUI];
 }
 
 
 #pragma mark - addUI
 - (void)addUI {
     self.view.backgroundColor = COLOR_WITH_RGB(240, 240, 240, 1);
-    self.userNameTextField.frame = CGRectMake(0, 0, kWidth - 2 * kBorderW, kTextFieldHeight);
-    self.userNameTextField.center = CGPointMake(self.view.bounds.size.width * 0.5, self.view.bounds.size.height * 0.5 - kTextFieldHeight);
-    [self.view addSubview:self.userNameTextField];
+    [self.view addSubview:self.backView];
+    [self.view addSubview:self.imageView];
     
-    self.passwordTextField.frame = CGRectMake(kBorderW, CGRectGetMaxY(self.userNameTextField.frame) + 1, kWidth - 2 * kBorderW, kTextFieldHeight);
-    [self.view addSubview:self.passwordTextField];
+    self.backView.frame = CGRectMake(0, 0, kWidth - 2 * kBorderW, 101);
+    self.backView.center = CGPointMake(self.view.bounds.size.width * 0.5, self.view.bounds.size.height * 0.5 - kTextFieldHeight);
     
-    self.loginBtn.frame = CGRectMake(kBorderW, CGRectGetMaxY(self.passwordTextField.frame) + 44, kWidth - 2 * kBorderW, kTextFieldHeight);
+    self.imageView.frame = CGRectMake(0, 0, 80, 80);
+    self.imageView.center = CGPointMake(self.view.frame.size.width * 0.5, self.view.frame.size.height * 0.25);
+    
+    self.loginBtn.frame = CGRectMake(kBorderW, CGRectGetMaxY(self.backView.frame) + 44, kWidth - 2 * kBorderW, kTextFieldHeight);
     [self.view addSubview:self.loginBtn];
 }
 
@@ -79,29 +81,6 @@
 }
 
 #pragma mark - getter
-- (UITextField *)userNameTextField {
-    if (!_userNameTextField) {
-        _userNameTextField = [[UITextField alloc] init];
-        _userNameTextField.placeholder = @"用户名";
-        _userNameTextField.font = kTextFont;
-        _userNameTextField.backgroundColor = [UIColor whiteColor];
-        _userNameTextField.layer.cornerRadius = 6;
-        
-    }
-    return _userNameTextField;
-}
-
-- (UITextField *)passwordTextField {
-    if (!_passwordTextField) {
-        _passwordTextField = [[UITextField alloc] init];
-        _passwordTextField.secureTextEntry = true;
-        _passwordTextField.font = kTextFont;
-        _passwordTextField.backgroundColor = [UIColor whiteColor];
-        _passwordTextField.layer.cornerRadius = 6;
-    }
-    return _passwordTextField;
-}
-
 - (UIButton *)loginBtn {
     if (!_loginBtn) {
         _loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -110,9 +89,26 @@
         [_loginBtn setBackgroundColor:[UIColor orangeColor]];
         _loginBtn.titleLabel.textColor = [UIColor whiteColor];
         [_loginBtn addTarget:self action:@selector(loginBtnAction:) forControlEvents:UIControlEventTouchUpInside];
-        
+        _loginBtn.layer.cornerRadius = 7;
     }
     return _loginBtn;
+}
+
+- (VXLoginBackView *)backView {
+    if (!_backView) {
+        _backView = [[VXLoginBackView alloc] init];
+        _backView.layer.cornerRadius = 7;
+        
+    }
+    return _backView;
+}
+
+- (UIImageView *)imageView {
+    if (!_imageView) {
+        _imageView = [[UIImageView alloc] init];
+        [_imageView setImage:[UIImage imageNamed:@"Icon120"]];
+    }
+    return _imageView;
 }
 
 - (void)didReceiveMemoryWarning {

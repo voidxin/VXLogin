@@ -14,9 +14,8 @@
 		576F07F11E9B165D0067D018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576F07F01E9B165D0067D018 /* Assets.xcassets */; };
 		576F07F41E9B165D0067D018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576F07F21E9B165D0067D018 /* LaunchScreen.storyboard */; };
 		576F07FE1E9B186F0067D018 /* VXLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F07FD1E9B186F0067D018 /* VXLoginViewController.m */; };
-		576F09621E9C83540067D018 /* business_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 576F09611E9C83540067D018 /* business_select@2x.png */; };
-		576F09641E9C83D70067D018 /* tab_homePage_backimage_sl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 576F09631E9C83D70067D018 /* tab_homePage_backimage_sl@2x.png */; };
 		576F09A91E9C87870067D018 /* VXLoginServiceProvide.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F09A81E9C87870067D018 /* VXLoginServiceProvide.m */; };
+		576F09EF1E9CC7840067D018 /* VXLoginBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F09EE1E9CC7840067D018 /* VXLoginBackView.m */; };
 		8E604C800B6199FC637A1950 /* libPods-VXLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6C75AD126059A10748F02B /* libPods-VXLogin.a */; };
 /* End PBXBuildFile section */
 
@@ -34,10 +33,10 @@
 		576F07F51E9B165D0067D018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		576F07FC1E9B186F0067D018 /* VXLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VXLoginViewController.h; sourceTree = "<group>"; };
 		576F07FD1E9B186F0067D018 /* VXLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VXLoginViewController.m; sourceTree = "<group>"; };
-		576F09611E9C83540067D018 /* business_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "business_select@2x.png"; sourceTree = "<group>"; };
-		576F09631E9C83D70067D018 /* tab_homePage_backimage_sl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_homePage_backimage_sl@2x.png"; sourceTree = "<group>"; };
 		576F09A71E9C87870067D018 /* VXLoginServiceProvide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VXLoginServiceProvide.h; sourceTree = "<group>"; };
 		576F09A81E9C87870067D018 /* VXLoginServiceProvide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VXLoginServiceProvide.m; sourceTree = "<group>"; };
+		576F09ED1E9CC7840067D018 /* VXLoginBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VXLoginBackView.h; sourceTree = "<group>"; };
+		576F09EE1E9CC7840067D018 /* VXLoginBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VXLoginBackView.m; sourceTree = "<group>"; };
 		663A4BFC1B3C168732812F84 /* Pods-VXLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VXLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-VXLogin/Pods-VXLogin.release.xcconfig"; sourceTree = "<group>"; };
 		CD6C75AD126059A10748F02B /* libPods-VXLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VXLogin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,22 +108,38 @@
 		576F07FB1E9B167A0067D018 /* VXLogin */ = {
 			isa = PBXGroup;
 			children = (
+				576F09EA1E9CC75D0067D018 /* Controllers */,
+				576F09EB1E9CC75D0067D018 /* Models */,
+				576F09EC1E9CC75D0067D018 /* Views */,
 				576F07FC1E9B186F0067D018 /* VXLoginViewController.h */,
 				576F07FD1E9B186F0067D018 /* VXLoginViewController.m */,
 				576F09A71E9C87870067D018 /* VXLoginServiceProvide.h */,
 				576F09A81E9C87870067D018 /* VXLoginServiceProvide.m */,
-				576F095E1E9C83000067D018 /* Images */,
 			);
 			path = VXLogin;
 			sourceTree = "<group>";
 		};
-		576F095E1E9C83000067D018 /* Images */ = {
+		576F09EA1E9CC75D0067D018 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				576F09611E9C83540067D018 /* business_select@2x.png */,
-				576F09631E9C83D70067D018 /* tab_homePage_backimage_sl@2x.png */,
 			);
-			path = Images;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		576F09EB1E9CC75D0067D018 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		576F09EC1E9CC75D0067D018 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				576F09ED1E9CC7840067D018 /* VXLoginBackView.h */,
+				576F09EE1E9CC7840067D018 /* VXLoginBackView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A92AF38744AB7712D2ADBCAF /* Frameworks */ = {
@@ -200,8 +215,6 @@
 			files = (
 				576F07F41E9B165D0067D018 /* LaunchScreen.storyboard in Resources */,
 				576F07F11E9B165D0067D018 /* Assets.xcassets in Resources */,
-				576F09641E9C83D70067D018 /* tab_homePage_backimage_sl@2x.png in Resources */,
-				576F09621E9C83540067D018 /* business_select@2x.png in Resources */,
 				576F07EF1E9B165D0067D018 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +279,7 @@
 				576F07EC1E9B165D0067D018 /* ViewController.m in Sources */,
 				576F07E91E9B165D0067D018 /* AppDelegate.m in Sources */,
 				576F07E61E9B165D0067D018 /* main.m in Sources */,
+				576F09EF1E9CC7840067D018 /* VXLoginBackView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
