@@ -31,13 +31,13 @@
 - (instancetype)initLoginVC {
     self = [super init];
     if (self) {
-       // [self addUI];
+        [self addUI];
     }
     return self;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addUI];
+   // [self addUI];
 }
 
 
