@@ -1,0 +1,8 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/VXDataPage" "${PODS_ROOT}/Headers/Public/VXDataPageServiceProcotol" "${PODS_ROOT}/Headers/Public/VXHomePage" "${PODS_ROOT}/Headers/Public/VXLoginServiceProtocol" "${PODS_ROOT}/Headers/Public/VXProtocolManager" "${PODS_ROOT}/Headers/Public/VXRootPage" "${PODS_ROOT}/Headers/Public/VXRootPageServiceProtocol" "${PODS_ROOT}/Headers/Public/VXVXHomePageServiceProtocol"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/VXDataPage" "$PODS_CONFIGURATION_BUILD_DIR/VXHomePage" "$PODS_CONFIGURATION_BUILD_DIR/VXProtocolManager" "$PODS_CONFIGURATION_BUILD_DIR/VXRootPage"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/VXDataPage" -isystem "${PODS_ROOT}/Headers/Public/VXDataPageServiceProcotol" -isystem "${PODS_ROOT}/Headers/Public/VXHomePage" -isystem "${PODS_ROOT}/Headers/Public/VXLoginServiceProtocol" -isystem "${PODS_ROOT}/Headers/Public/VXProtocolManager" -isystem "${PODS_ROOT}/Headers/Public/VXRootPage" -isystem "${PODS_ROOT}/Headers/Public/VXRootPageServiceProtocol" -isystem "${PODS_ROOT}/Headers/Public/VXVXHomePageServiceProtocol"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"VXDataPage" -l"VXHomePage" -l"VXProtocolManager" -l"VXRootPage"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods

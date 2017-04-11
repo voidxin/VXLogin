@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "VXLoginViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    VXLoginViewController *loginVC = [[VXLoginViewController alloc] init];
+    self.window = ({
+        UIWindow *templeWindow = [[UIWindow alloc] init];
+        [templeWindow setBackgroundColor:[UIColor whiteColor]];
+        templeWindow.bounds = [UIScreen mainScreen].bounds;
+        templeWindow.rootViewController = loginVC;
+        templeWindow;
+    });
+    [self.window makeKeyWindow];
     return YES;
 }
 

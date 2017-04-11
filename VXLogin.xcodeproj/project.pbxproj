@@ -13,9 +13,15 @@
 		576F07EF1E9B165D0067D018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576F07ED1E9B165D0067D018 /* Main.storyboard */; };
 		576F07F11E9B165D0067D018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576F07F01E9B165D0067D018 /* Assets.xcassets */; };
 		576F07F41E9B165D0067D018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576F07F21E9B165D0067D018 /* LaunchScreen.storyboard */; };
+		576F07FE1E9B186F0067D018 /* VXLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F07FD1E9B186F0067D018 /* VXLoginViewController.m */; };
+		576F09621E9C83540067D018 /* business_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 576F09611E9C83540067D018 /* business_select@2x.png */; };
+		576F09641E9C83D70067D018 /* tab_homePage_backimage_sl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 576F09631E9C83D70067D018 /* tab_homePage_backimage_sl@2x.png */; };
+		576F09A91E9C87870067D018 /* VXLoginServiceProvide.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F09A81E9C87870067D018 /* VXLoginServiceProvide.m */; };
+		8E604C800B6199FC637A1950 /* libPods-VXLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6C75AD126059A10748F02B /* libPods-VXLogin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DC0E4FB2E14A2AEA44664C3 /* Pods-VXLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VXLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VXLogin/Pods-VXLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		576F07E11E9B165D0067D018 /* VXLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VXLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		576F07E51E9B165D0067D018 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		576F07E71E9B165D0067D018 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,14 @@
 		576F07F01E9B165D0067D018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		576F07F31E9B165D0067D018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		576F07F51E9B165D0067D018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		576F07FC1E9B186F0067D018 /* VXLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VXLoginViewController.h; sourceTree = "<group>"; };
+		576F07FD1E9B186F0067D018 /* VXLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VXLoginViewController.m; sourceTree = "<group>"; };
+		576F09611E9C83540067D018 /* business_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "business_select@2x.png"; sourceTree = "<group>"; };
+		576F09631E9C83D70067D018 /* tab_homePage_backimage_sl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_homePage_backimage_sl@2x.png"; sourceTree = "<group>"; };
+		576F09A71E9C87870067D018 /* VXLoginServiceProvide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VXLoginServiceProvide.h; sourceTree = "<group>"; };
+		576F09A81E9C87870067D018 /* VXLoginServiceProvide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VXLoginServiceProvide.m; sourceTree = "<group>"; };
+		663A4BFC1B3C168732812F84 /* Pods-VXLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VXLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-VXLogin/Pods-VXLogin.release.xcconfig"; sourceTree = "<group>"; };
+		CD6C75AD126059A10748F02B /* libPods-VXLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VXLogin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E604C800B6199FC637A1950 /* libPods-VXLogin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CD3673F9C3D3D7D05A6EB86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DC0E4FB2E14A2AEA44664C3 /* Pods-VXLogin.debug.xcconfig */,
+				663A4BFC1B3C168732812F84 /* Pods-VXLogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		576F07D81E9B165D0067D018 = {
 			isa = PBXGroup;
 			children = (
 				576F07E31E9B165D0067D018 /* VXLogin */,
 				576F07E21E9B165D0067D018 /* Products */,
+				1CD3673F9C3D3D7D05A6EB86 /* Pods */,
+				A92AF38744AB7712D2ADBCAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +84,7 @@
 		576F07E31E9B165D0067D018 /* VXLogin */ = {
 			isa = PBXGroup;
 			children = (
+				576F07FB1E9B167A0067D018 /* VXLogin */,
 				576F07E71E9B165D0067D018 /* AppDelegate.h */,
 				576F07E81E9B165D0067D018 /* AppDelegate.m */,
 				576F07EA1E9B165D0067D018 /* ViewController.h */,
@@ -79,6 +106,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		576F07FB1E9B167A0067D018 /* VXLogin */ = {
+			isa = PBXGroup;
+			children = (
+				576F07FC1E9B186F0067D018 /* VXLoginViewController.h */,
+				576F07FD1E9B186F0067D018 /* VXLoginViewController.m */,
+				576F09A71E9C87870067D018 /* VXLoginServiceProvide.h */,
+				576F09A81E9C87870067D018 /* VXLoginServiceProvide.m */,
+				576F095E1E9C83000067D018 /* Images */,
+			);
+			path = VXLogin;
+			sourceTree = "<group>";
+		};
+		576F095E1E9C83000067D018 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				576F09611E9C83540067D018 /* business_select@2x.png */,
+				576F09631E9C83D70067D018 /* tab_homePage_backimage_sl@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A92AF38744AB7712D2ADBCAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD6C75AD126059A10748F02B /* libPods-VXLogin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 576F07F81E9B165E0067D018 /* Build configuration list for PBXNativeTarget "VXLogin" */;
 			buildPhases = (
+				3463B5E64FEC8254719AD135 /* [CP] Check Pods Manifest.lock */,
 				576F07DD1E9B165D0067D018 /* Sources */,
 				576F07DE1E9B165D0067D018 /* Frameworks */,
 				576F07DF1E9B165D0067D018 /* Resources */,
+				070AC42E3CF3CE3462D21551 /* [CP] Embed Pods Frameworks */,
+				A0BC6C0F1417FCFCD26E849B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -105,6 +164,7 @@
 		576F07D91E9B165D0067D018 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = VX;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = voidxin;
 				TargetAttributes = {
@@ -140,17 +200,69 @@
 			files = (
 				576F07F41E9B165D0067D018 /* LaunchScreen.storyboard in Resources */,
 				576F07F11E9B165D0067D018 /* Assets.xcassets in Resources */,
+				576F09641E9C83D70067D018 /* tab_homePage_backimage_sl@2x.png in Resources */,
+				576F09621E9C83540067D018 /* business_select@2x.png in Resources */,
 				576F07EF1E9B165D0067D018 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		070AC42E3CF3CE3462D21551 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VXLogin/Pods-VXLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3463B5E64FEC8254719AD135 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0BC6C0F1417FCFCD26E849B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VXLogin/Pods-VXLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		576F07DD1E9B165D0067D018 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576F07FE1E9B186F0067D018 /* VXLoginViewController.m in Sources */,
+				576F09A91E9C87870067D018 /* VXLoginServiceProvide.m in Sources */,
 				576F07EC1E9B165D0067D018 /* ViewController.m in Sources */,
 				576F07E91E9B165D0067D018 /* AppDelegate.m in Sources */,
 				576F07E61E9B165D0067D018 /* main.m in Sources */,
@@ -269,6 +381,7 @@
 		};
 		576F07F91E9B165E0067D018 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DC0E4FB2E14A2AEA44664C3 /* Pods-VXLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XZ5PNLT2U8;
@@ -281,6 +394,7 @@
 		};
 		576F07FA1E9B165E0067D018 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 663A4BFC1B3C168732812F84 /* Pods-VXLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XZ5PNLT2U8;
@@ -310,6 +424,7 @@
 				576F07FA1E9B165E0067D018 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

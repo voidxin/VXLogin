@@ -1,0 +1,35 @@
+PODS:
+  - VXDataPage (0.0.2):
+    - VXDataPageServiceProcotol
+    - VXProtocolManager
+  - VXDataPageServiceProcotol (0.0.1)
+  - VXHomePage (0.0.2):
+    - VXProtocolManager
+    - VXVXHomePageServiceProtocol
+  - VXLoginServiceProtocol (0.0.1)
+  - VXProtocolManager (0.0.3)
+  - VXRootPage (0.0.6):
+    - VXProtocolManager
+    - VXRootPageServiceProtocol
+  - VXRootPageServiceProtocol (0.0.2)
+  - VXVXHomePageServiceProtocol (0.0.5)
+
+DEPENDENCIES:
+  - VXDataPage (~> 0.0.2)
+  - VXHomePage (~> 0.0.2)
+  - VXLoginServiceProtocol
+  - VXRootPage (~> 0.0.6)
+
+SPEC CHECKSUMS:
+  VXDataPage: fba1f77d69ff81a640240a632dbb17a27e0a3302
+  VXDataPageServiceProcotol: 8470e0cf57983c1fb76923a62efa8e2f1b1951ae
+  VXHomePage: 2c48ff5406dd84e236740e386720805e26b88409
+  VXLoginServiceProtocol: 25f71e6d405387bf69d1564cc0b9c590269bf1db
+  VXProtocolManager: 23930025df1569999527cd61687052fd3fa5675e
+  VXRootPage: b35145973dc968166e3fd692ebd054a9873dac61
+  VXRootPageServiceProtocol: baad3de4696abaacbbc67a0b7e4d8c2a727a1ce8
+  VXVXHomePageServiceProtocol: 69bfc1263c3015b854fdb1c16b0b1be674958369
+
+PODFILE CHECKSUM: 9f5718423c3ad65e0f602b2f35abb5035a8b07d9
+
+COCOAPODS: 1.2.0

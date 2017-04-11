@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-VXLogin.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VXDataPage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VXHomePage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VXProtocolManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VXRootPage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0C7E4EF225EDF5B88811C0A797BC1E5C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>13020D8CFF44C763B31059A817324DFF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5782FF482133294410A14733E12F470B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>57DC4828CF5E4EF633DBBE3D11AC10B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>877AE23B2281B9636583305DB454AE6C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
