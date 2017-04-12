@@ -135,7 +135,7 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
   s.dependency "VXLoginServiceProtocol"
-  s.dependency "VXHomePage","~>0.0.2"
+  s.dependency "VXHomePage","~>0.0.3"
   s.dependency "VXLoginServiceProtocol"
   s.dependency "VXDataPage","~>0.0.2"
   s.dependency "VXRootPage","~>0.0.6"
