@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "VXLogin"
-  s.version      = "0.0.8"
+  s.version      = "0.0.9"
   s.summary      = "this is my login vc"
 
   # This description is used to generate tags and improve search results.
@@ -138,5 +138,5 @@ Pod::Spec.new do |s|
   s.dependency "VXHomePage","~>0.0.3"
   s.dependency "VXLoginServiceProtocol"
   s.dependency "VXDataPage","~>0.0.2"
-  s.dependency "VXRootPage","~>0.0.6"
+  s.dependency "VXRootPage"
 end
