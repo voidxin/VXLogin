@@ -59,7 +59,7 @@
 
 #pragma mark - btnAction
 - (void)loginBtnAction:(UIButton *)btn {
-    
+    //login点击事件
     id <VXVXHomePageServiceProtocol> homeProvide = [VXProtocolManager serviceProvideForProtocol:@protocol(VXVXHomePageServiceProtocol)];
     UIViewController *homePageVC = [homeProvide homepageViewControllerUserMessage:@"0110073"];
     homePageVC.title = @"homePage";
