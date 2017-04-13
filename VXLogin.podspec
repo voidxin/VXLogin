@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "VXLogin"
-  s.version      = "0.0.9"
+  s.version      = "0.1.0"
   s.summary      = "this is my login vc"
 
   # This description is used to generate tags and improve search results.
@@ -135,8 +135,8 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
   s.dependency "VXLoginServiceProtocol"
-  s.dependency "VXHomePage","~>0.0.3"
+  s.dependency "VXHomePage"
   s.dependency "VXLoginServiceProtocol"
-  s.dependency "VXDataPage","~>0.0.2"
+  s.dependency "VXDataPage"
   s.dependency "VXRootPage"
 end
